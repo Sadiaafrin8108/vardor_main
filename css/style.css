@@ -1,0 +1,466 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    text-decoration: none !important;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1320px auto;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Poppins' ,sans-serif !important;
+    background-color: #eeeeee;
+}
+
+
+/* common css end  */
+/* navbar start  */
+#navbar{
+	background-color: rgba(0,0,0,0.8);
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+#navbar .navbar-brand img{
+	max-height: 80px;
+}
+#navbar .navbar-nav{
+	width: 100% !important;
+	justify-content: end !important;
+}
+#navbar .list ul li{
+	margin: 0 20px;
+}
+#navbar .list ul a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 30px 2px;
+	position: relative;
+}
+#navbar .list ul a::after{
+	content: '';
+	height: 5px;
+	width: 100%;
+	background-color: #C8385E;
+	position: absolute;
+	bottom: 0;
+	transform: scaleX(0);
+	transition: .4s;
+}
+#navbar .list ul a:hover::after{
+	transform: scaleX(1);
+}
+#navbar .list ul a span{
+	display: block;
+	font-size: 12px;
+	text-transform: none;
+	font-style: italic;
+	color: rgb(255,255,255,0.5);
+	font-weight: 500;
+	transition: .4s;
+}
+#navbar .list ul a:hover span{
+	color: #fff;
+}
+#navbar .list ul .flag{
+	line-height: 40px;
+	padding: 30px 12px;
+}
+#navbar .list ul .flag img{
+	width: 100%;
+	max-height: none;
+}
+#navbar .list button{
+	border: none;
+	line-height: 40px;
+	color: #fff;
+	background-color: transparent;
+	position: relative;
+	margin: 0 20px;
+	text-align: center;
+}
+#navbar .list .dropdown{
+	position: relative;
+}
+#navbar .list .dropdown_menu{
+	position: absolute;
+	min-width: 200px;
+	padding: 10px 0;
+	background-color: rgba(34,34,34,.8);
+	perspective: 1000;
+	transform-origin: top;
+	animation-fill-mode: forwards;
+	transform: rotateX(90deg);
+	visibility:hidden;
+	opacity:0;
+	transition: transform 0.5s ease, opacity 0.25s ease .05s, visibility .1s ease .3s;
+}
+#navbar .list .dropdown:hover .dropdown_menu{
+	opacity: 1;
+	z-index: 1000;
+	transform: rotateX(0);
+	visibility:visible;
+	transition: transform 0.5s ease, opacity 0.25s ease;
+}
+#navbar .list .dropdown_menu li{
+	position: relative !important;
+	margin: 0 !important;
+	display: block;
+	padding: 0 10px;
+}
+#navbar .list .dropdown_menu li a{
+	display: block;
+	padding:0px !important;
+	font-size: 12px;
+	text-decoration: none;
+	position: relative;
+	text-transform: capitalize;
+	padding: 10px 0 !important;
+}
+#navbar .list .dropdown_menu li a::after{
+	content: '';
+	height: 1.5px !important;
+	width: 100%;
+	background-color: #C8385E;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#navbar .list .dropdown_menu li a i{
+	float: right;
+}
+#navbar .list .lastchild li a i{
+	float: left;
+	margin-right: 10px;
+}
+#navbar .list .dropdown_menu .sub_dropdown{
+	min-width: 200px;
+	position: absolute;
+	top: 0px !important;
+	right: -201px;
+	background-color: rgba(34,34,34,.8);
+	padding: 0 !important;
+	perspective: 1000;
+	transform-origin: top;
+	animation-fill-mode: forwards;
+	transform: rotateX(90deg);
+	visibility:hidden;
+	opacity:0;
+	transition: transform 0.5s ease, opacity 0.25s ease .05s, visibility .1s ease .3s;
+	clear: both;
+}
+#navbar .list .dropdown_menu li:hover .sub_dropdown{
+	opacity: 1;
+	z-index: 1000;
+	transform: rotateX(0);
+	visibility:visible;
+	transition: transform 0.5s ease, opacity 0.25s ease;
+}
+ .navbar .container {
+    position: relative;
+}
+/* navbar end  */
+#banner{
+    background-image: url(../images/bgimg3.jpg);
+    padding: 80px  0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#vardor_shop #banner ul li:first-child{
+    font-size: 65px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 5px 0;
+    position: relative;
+}
+#levardor_shopaf #banner ul li:first-child::after {
+    content: '';
+    height: 6px;
+    width: 175px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+#vardor_shop #banner ul li:last-child {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+#vardor_shop #banner ul li:last-child i{
+    font-size: 12px;
+}
+#vardor_shop #banner ul li:last-child a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+    transition: .4s;
+    font-weight: 300;
+}
+#vardor_shop #banner ul li:last-child a:hover{
+    color: #C8385E;
+}
+#vardor_shop #main{
+    padding: 20px 0;
+    background-color: #EEEEEE;
+}
+#vardor_shop #main .img{
+    position: relative;
+    overflow: hidden;
+}
+#vardor_shop #main .img:hover a{
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+#vardor_shop #main .img a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -100%;
+    left: -100%;
+    background-color: rgb(200, 56, 94,0.60);
+    color: #222222;
+}
+#vardor_shop #main .img a i{
+    font-size: 25px;
+    padding: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#vardor_shop #main .img p{
+    margin-bottom: 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #f5f5f5;
+    z-index: 1;
+    display: inline-block;
+}
+#vardor_shop #main .categories h3{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+}
+#vardor_shop #main .categories h3::after{
+    content: '';
+    height: 4px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -10px;
+    border-top: 2px solid #6a6767;
+    border-bottom: 2px solid #6a6767;
+}
+#vardor_shop #main .categories ul li a{
+    font-size: 14px;
+    color: #222222;
+    text-decoration: none;
+    font-weight: 400;
+    transition: .4s;
+}
+#vardor_shop #main .categories ul li a:hover{
+    color: #C8385E;
+}
+#vardor_shop #main .categories ul li i{
+    font-size: 14px;
+    color: #222222;
+    margin: 0 5px;
+}
+#banner .main .item{
+	z-index: 500;
+}
+.mx-3{
+    padding: 28px 0;
+}
+.feutures_title h2{
+    font-size: 21px;
+    margin: 9px 0;
+    font-weight: 500;
+    color: #222222;
+    text-transform: uppercase;
+    line-height: 1.5;
+    position: relative;
+}
+.feutures_title h3::after{
+    content: '';
+    height: 4px;
+    width: 120px;
+    border-top: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+}
+ .detail p{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #222222;
+    font-weight: 300;
+    margin: 0 0 9px;
+}
+#sadia .btn-secondary {
+    color: #212529;
+    background: #fff;
+    border-color: #6c757d;
+}
+
+#vardor_shop .card_layer{
+    background-color: #eeeeee;
+}
+
+
+#vardor_shop .colum_right img{
+    width: 175px;
+    margin: auto;
+    padding-top: 15px;
+}
+#vardor_shop .colum_right .card{
+   
+    background-color: #fff;
+    border-radius: 0px !important;
+    padding: 0 !important;
+}
+#vardor_shop .colum_right .card_text{
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+#vardor_shop .colum_right .card_text .icons{
+    padding-left: 5px;
+}
+
+
+#vardor_shop .colum_right .card_text p{
+    transition: .3s;
+    
+    padding-top: 15px;
+}
+#vardor_shop .colum_right .card_text p:hover{
+    color: #77a464;
+    cursor: pointer;
+}
+#vardor_shop .colum_right .card_s_text{
+    margin-top: 50px;
+    padding-left: 25px;
+}
+#vardor_shop .colum_right .card_s_text p{
+    transition: .3s;
+}
+#vardor_shop .colum_right .card_s_text p:hover{
+    color: #77a464;
+    cursor: pointer;
+}
+
+#vardor_shop .icons a{
+    font-size: 12px;
+    margin-left: -6px;
+    color: #A9CA6E;
+}
+#vardor_shop .colum_right p{
+    font-family: inherit;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #343434;
+}
+#vardor_shop .colum_right .dollar{
+    font-size: 14px;
+    color: #77a464;
+    font-weight: 400;
+}
+#vardor_shop .colum_right  span{
+    font-family: 'FontAwesome';
+    font-size: 9px;
+    color: #77a464;
+}
+#vardor_shop .colum_right .button{
+    margin-top: 16px;
+    font-weight: normal;
+    transition: all .2s;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border-top: solid 1px rgba(51,51,51,.05);
+    color: #888;
+    padding: 8px 0;
+
+}
+#vardor_shop .button a{
+    font-size: 15px;
+    color: #888;
+    text-decoration: none;
+}
+#vardor_shop .colum_right .button:hover{
+    background-color: #A9CA6E;
+    color: #fff;
+    cursor: pointer;
+}
+#vardor_shop .colum_right .button a:hover{
+    color: #fff;
+}
+
+#vardor_shop .widget_inner{
+    background-color: #fff;
+}
+
+#vardor_shop .widget-title{
+    font-family: "Oswald", Times, serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 40px;
+    padding-left:25px ;
+    padding-top: 20px;
+}
+
+
+#vardor_shop .inner_box img{
+    width: 80px;
+    height: 55px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+
+#vardor_shop .inner_box .w_text{
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.25;
+    padding-left: 18px;
+
+}
+
+#vardor_shop .inner_box .middle{
+    padding-left: 100px;
+}
